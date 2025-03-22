@@ -1,7 +1,7 @@
-// Arbitrum Sepolia addresses - these will need to be updated with real addresses once available
-export const DEX_ROUTER_ADDRESS = "0xD7f655E006F1aE864bdababC8fC978C3e5B38b7e"; // Example placeholder
-export const DEX_FACTORY_ADDRESS = "0xad4c763Bc17F9893fDd0BAa2Ce5e4F20D3B89d3f"; // Example placeholder
-export const WETH_ADDRESS = "0xc336C7309D8a2B0431Edc0f5D40a5E529437FE5a"; // Example placeholder
+import { ethers } from "ethers";
+export const DEX_ROUTER_ADDRESS = "0xd7f655e006f1ae864bdababc8fc978c3e5b38b7e";
+export const DEX_FACTORY_ADDRESS = "0xad4c763bc17f9893fdd0baa2ce5e4f20d3b89d3f";
+export const WETH_ADDRESS = "0xc336c7309d8a2b0431edc0f5d40a5e529437fe5a";
 
 export const CHAIN_ID = 421614; // Arbitrum Sepolia
 export const EXPLORER_URL = "https://sepolia.arbiscan.io";

@@ -76,7 +76,12 @@ export default function LiquidityProvider({
         IUniswapV2FactoryABI,
         signer
       );
-      const pairAddress = await factory.getPair(tokenAddress, WETH_ADDRESS);
+      const validTokenAddress = ethers.utils.getAddress(tokenAddress);
+      const validWETHAddress = ethers.utils.getAddress(WETH_ADDRESS);
+      const pairAddress = await factory.getPair(
+        validTokenAddress,
+        validWETHAddress
+      );
 
       // Zero address means pair doesn't exist
       setPairExists(pairAddress !== ethers.constants.AddressZero);
